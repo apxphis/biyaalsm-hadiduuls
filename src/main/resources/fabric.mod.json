@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "biyaalsm-hadiduuls",
+	"version": "${version}",
+	"name": "Biyaalsm Hadiduuls",
+	"description": "A mod that adds Biyaals Hadiduuls, or Star Tools, tot he game",
+	"authors": [
+		"ViaTech"
+	],
+	"contact": {
+		"homepage": "https://viatech.com/contact",
+		"sources": "https://github.com/apxphis/Biyaalsm-Hadiduuls-1.21.4"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/biyaalsm-hadiduuls/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.viatech.biyaalsha.BiyaalsmHadiduuls"
+		],
+		"fabric-datagen": [
+			"com.viatech.biyaalsha.BiyaalsmHadiduulsDataGenerator"
+		],
+		"client": [
+			"com.viatech.biyaalsha.BiyaalsmHadiduulsClient"
+		]
+	},
+	"mixins": [
+		"biyaalsm-hadiduuls.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
