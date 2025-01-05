@@ -1,5 +1,6 @@
 package com.viatech.biyaalsha;
 
+import com.viatech.biyaalsha.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +13,6 @@ public class BiyaalsmHadiduuls implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
